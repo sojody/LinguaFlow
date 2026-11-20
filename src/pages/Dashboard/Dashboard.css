@@ -1,0 +1,515 @@
+.dashboard-page {
+  width: 100%;
+  color: #24445e;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  color: #19476a;
+  font-size: 27px;
+  margin: 0 0 10px;
+}
+
+.dashboard-header p {
+  color: #8a9dab;
+  font-size: 14px;
+  margin: 0;
+}
+
+.dashboard-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #dff2ff;
+  color: #2996d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.dashboard-user div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dashboard-user strong {
+  font-size: 13px;
+  color: #31556f;
+}
+
+.dashboard-user span {
+  font-size: 11px;
+  color: #96a8b5;
+}
+
+/* Welcome Banner */
+.dashboard-banner {
+  min-height: 220px;
+  padding: 35px 40px;
+  border-radius: 20px;
+  background: linear-gradient(120deg, #d8f0ff, #eaf8ff);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 35px;
+}
+
+.banner-content {
+  max-width: 550px;
+  position: relative;
+  z-index: 1;
+}
+
+.banner-content > span {
+  color: #2996d5;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.banner-content h2 {
+  color: #19476a;
+  font-size: 30px;
+  margin: 13px 0;
+}
+
+.banner-content p {
+  color: #6f8ba1;
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 480px;
+  margin-bottom: 22px;
+}
+
+.banner-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding: 13px 20px;
+  border-radius: 9px;
+  background: #2996d5;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.banner-button:hover {
+  background: #187dbb;
+  transform: translateY(-2px);
+}
+
+.banner-button span {
+  font-size: 18px;
+}
+
+.banner-decoration {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 45px;
+  transform: rotate(-8deg);
+}
+
+.banner-decoration span:nth-child(2) {
+  font-size: 75px;
+}
+
+.banner-decoration span:nth-child(3) {
+  font-size: 55px;
+}
+
+/* Section Heading */
+.dashboard-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-section-heading h2 {
+  color: #234a68;
+  font-size: 19px;
+  margin: 0;
+}
+
+.dashboard-section-heading > span {
+  color: #2996d5;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Statistics */
+.dashboard-stats {
+  margin-bottom: 35px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.stat-card {
+  padding: 22px;
+  border-radius: 15px;
+  background: white;
+  border: 1px solid #edf2f6;
+  box-shadow: 0 5px 20px rgba(40, 90, 120, 0.04);
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(40, 90, 120, 0.08);
+}
+
+.stat-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.stat-icon {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaf6ff;
+  border-radius: 12px;
+  font-size: 21px;
+}
+
+.stat-arrow {
+  color: #36b58b;
+  font-size: 19px;
+}
+
+.stat-card h3 {
+  color: #8499a9;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+
+.stat-card > strong {
+  color: #234a68;
+  font-size: 25px;
+}
+
+.stat-card p {
+  color: #36b58b;
+  font-size: 11px;
+  margin: 10px 0 0;
+}
+
+/* Bottom Section */
+.dashboard-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin-bottom: 25px;
+}
+
+.progress-card,
+.daily-goals {
+  padding: 25px;
+  border-radius: 16px;
+  background: white;
+  border: 1px solid #edf2f6;
+  box-shadow: 0 5px 20px rgba(40, 90, 120, 0.04);
+}
+
+/* Learning Progress */
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0 15px;
+}
+
+.progress-info span {
+  color: #8a9dab;
+  font-size: 12px;
+}
+
+.progress-info h3 {
+  color: #234a68;
+  font-size: 16px;
+  margin: 8px 0 0;
+}
+
+.progress-info > strong {
+  color: #2996d5;
+  font-size: 23px;
+}
+
+.progress-track,
+.goal-track {
+  width: 100%;
+  height: 9px;
+  background: #edf3f7;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2996d5;
+  border-radius: 20px;
+  transition: width 0.4s ease;
+}
+
+.progress-card > p {
+  color: #91a2af;
+  font-size: 12px;
+  line-height: 1.7;
+  margin-top: 18px;
+}
+
+/* Daily Goals */
+.goal-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.goal-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: #eaf6ff;
+  font-size: 20px;
+}
+
+.goal-details {
+  flex: 1;
+}
+
+.goal-details strong {
+  display: block;
+  color: #34566f;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.goal-details span {
+  display: block;
+  color: #91a2af;
+  font-size: 11px;
+  margin-bottom: 9px;
+}
+
+.goal-track {
+  height: 6px;
+}
+
+.goal-fill {
+  height: 100%;
+  border-radius: 20px;
+  background: #36b58b;
+  transition: width 0.4s ease;
+}
+
+.goal-success {
+  color: #269b75;
+  font-size: 12px;
+  margin-top: 18px;
+  line-height: 1.6;
+}
+
+/* Recent Activity */
+.recent-activity {
+  padding: 25px;
+  border-radius: 16px;
+  background: white;
+  border: 1px solid #edf2f6;
+  box-shadow: 0 5px 20px rgba(40, 90, 120, 0.04);
+  margin-bottom: 30px;
+}
+
+.recent-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 5px;
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.recent-item:last-child {
+  border-bottom: none;
+}
+
+.recent-item-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaf6ff;
+  border-radius: 12px;
+  font-size: 19px;
+}
+
+.recent-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  min-width: 0;
+}
+
+.recent-item-details strong {
+  color: #31556f;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.recent-item-details span {
+  color: #91a2af;
+  font-size: 11px;
+}
+
+.recent-item-date {
+  color: #96a8b5;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.recent-empty {
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.recent-empty > span {
+  font-size: 35px;
+}
+
+.recent-empty h3 {
+  color: #31556f;
+  font-size: 16px;
+  margin: 12px 0 8px;
+}
+
+.recent-empty p {
+  color: #91a2af;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.recent-empty a {
+  color: #2996d5;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.recent-empty a:hover {
+  text-decoration: underline;
+}
+
+/* Loading and Errors */
+.dashboard-message,
+.dashboard-error {
+  padding: 25px;
+  text-align: center;
+  color: #6f8ba1;
+}
+
+.dashboard-error {
+  color: #dc2626;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner-decoration {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .dashboard-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .dashboard-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dashboard-header h1 {
+    font-size: 22px;
+  }
+
+  .dashboard-banner {
+    padding: 25px;
+  }
+
+  .banner-content h2 {
+    font-size: 24px;
+  }
+
+  .banner-decoration {
+    display: none;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    padding: 18px;
+  }
+
+  .progress-card,
+  .daily-goals,
+  .recent-activity {
+    padding: 20px;
+  }
+
+  .recent-item {
+    gap: 10px;
+  }
+}
+

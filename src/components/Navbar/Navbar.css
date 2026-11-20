@@ -1,0 +1,108 @@
+.navbar {
+  width: 100%;
+  min-height: 85px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  box-shadow: none;
+  position: relative;
+  z-index: 100;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.robot-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.logo-text {
+  color: #173b59;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.logo-text span {
+  color: #16a6d8;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style: none;
+}
+
+/* Navigation Links */
+.nav-links a {
+  color: #24465f;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #159bd7;
+}
+
+
+
+/* Hover & Active */
+.nav-links a:hover,
+.nav-links a.active {
+  color: #159bd7;
+}
+
+/* Sign Up Button */
+.nav-start-btn {
+  background: linear-gradient(135deg, #20b5e8, #168bd1);
+  color: white;
+  text-decoration: none;
+  padding: 12px 23px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-start-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(22, 139, 209, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .navbar {
+    padding: 15px 4%;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .logo-text {
+    font-size: 19px;
+  }
+}
+
+
+
+
+

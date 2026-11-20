@@ -1,0 +1,138 @@
+
+.dashboard-layout {
+  min-height: 100vh;
+  display: flex;
+  background: #f5f9fc;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.dashboard-sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background: white;
+  padding: 30px 18px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #e8eef3;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/* Logo */
+.dashboard-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  margin-bottom: 50px;
+  padding-left: 8px;
+}
+
+.dashboard-logo img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.dashboard-logo span {
+  color: #19476a;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.dashboard-logo strong {
+  color: #2996d5;
+}
+
+/* Menu */
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-title {
+  color: #9aabb8;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  padding-left: 12px;
+  margin-bottom: 12px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px 13px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #6b8295;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.sidebar-link span {
+  font-size: 19px;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background: #e9f6ff;
+  color: #2996d5;
+}
+
+/* Bottom */
+.sidebar-bottom {
+  margin-top: auto;
+  border-top: 1px solid #edf1f4;
+  padding-top: 20px;
+}
+
+/* Main */
+.dashboard-main {
+  width: calc(100% - 250px);
+  min-height: 100vh;
+  margin-left: 250px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .dashboard-sidebar {
+    width: 75px;
+    padding: 25px 10px;
+  }
+
+  .dashboard-logo {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .dashboard-logo span,
+  .sidebar-title,
+  .sidebar-link:not(:has(span)) {
+    display: none;
+  }
+
+  .sidebar-link {
+    justify-content: center;
+    padding: 14px 5px;
+    font-size: 0;
+  }
+
+  .sidebar-link span {
+    font-size: 21px;
+  }
+
+  .dashboard-main {
+    width: calc(100% - 75px);
+    margin-left: 75px;
+    padding: 18px;
+  }
+}
